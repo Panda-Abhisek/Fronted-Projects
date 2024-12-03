@@ -78,3 +78,10 @@ html, body{
 #bio2 h3, i{
     font-size: xx-large;
 }
+#bio2-icons i{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 50px;
+}
