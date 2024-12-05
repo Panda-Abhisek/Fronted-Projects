@@ -29,7 +29,7 @@ html, body{
     margin-left: 10px;
 }
 #intro{
-    height: 40%;
+    height: 42%;
     width: 100%;
     padding: 40px;
 }
@@ -59,6 +59,7 @@ html, body{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 60px;
 }
 #bio h2{
     width: 60%;
@@ -81,7 +82,61 @@ html, body{
 #bio2-icons i{
     background-color: black;
     color: white;
-    padding: 10px;
+    padding: 8px;
     margin-right: 10px;
     border-radius: 50px;
+}
+#work{
+    height: 50%;
+    width: 100%;
+    border-top: 2px solid #000;
+    display: flex;
+    padding: 50px 40px;
+}
+#work1{
+    height: 100%;
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 60px;
+}
+#work1 h3{
+    font-size: 30px;
+}
+#work1 i{
+    font-size: 30px;
+}
+#work2{
+    height: 100%;
+    width: 60%;
+    padding: 0 60px;
+    border-left: 2px solid #000;
+}
+.work2-part{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0 ;
+}
+.work2-part:nth-child(1){
+    border-bottom: 2px solid #000;
+    padding-top: 0;
+}
+.work2-part .elem{
+    width: 50%;
+    height: 100%;
+}
+.work2-part .elem:nth-child(1){
+    border-right: 2px solid #000;
+    padding-right: 50px;
+}
+.work2-part .elem:nth-child(2){
+    padding-left: 60px;
+}
+.work2-part .elem h4{
+    font-size: 30px;
+}
+.work2-part .elem p{
+    font-size: 15px;
+    color: grey;
 }
