@@ -50,35 +50,35 @@ function showTheCards() {
 
 showTheCards();
 
+function handleSearchFunctionality() {
+  var input = document.querySelector("#searchinput");
 
+  input.addEventListener("focus", function () {
+    document.querySelector(".overlay").style.display = "block";
+  });
+  input.addEventListener("blur", function () {
+    document.querySelector(".overlay").style.display = "none";
+  });
+  input.addEventListener("blur", function () {
+    document.querySelector("#searchdata").style.display = "none";
+  });
 
-// function handleSearchFunctionality(){
-//     var input = document.querySelector("#searchinput");
-
-//     input
-//     .addEventListener("focus", function(){
-//         document.querySelector(".overlay").style.display = "block";
-//     })
-
-//     input
-//     .addEventListener("blur", function(){
-//         document.querySelector(".overlay").style.display = "none";
-//     })
-
-//     input
-//     .addEventListener("input", function(){
-//         const filteredArray = arr.filter(obj => obj.name.toLowerCase().startsWith(input.value));
-//         var clutter = "";
-//         filteredArray.forEach(function(obj){
-//             clutter += `<div class="res flex px-8 py-3">
-//             <i class="ri-search-line font-semibold mr-5"></i>
-//             <h3 class="font-semibold">${obj.name}</h3>
-//         </div>`
-//         })
-//     document.querySelector(".searchdata").style.display = "block";
-//         document.querySelector(".searchdata").innerHTML = clutter;
-//     })
-// }
-
-// handleSearchFunctionality();
-// showTheCards();
+  input.addEventListener("input", function () {
+    const filteredArray = arr.filter((obj) =>
+      obj.name.toLowerCase().startsWith(input.value)
+    );
+    var clutter = "";
+    filteredArray.forEach(function (obj) {
+      clutter += `<div class="res flex px-8 py-3">
+             <i class="ri-search-line font-semibold mr-5"></i>
+             <h3 class="font-semibold">${obj.name}</h3>
+         </div>`;
+    });
+    // input.addEventListener("focus", function(){
+    //     
+    // })
+    document.querySelector("#searchdata").style.display = "block";
+    document.querySelector(".searchdata").innerHTML = clutter;
+  });
+}
+handleSearchFunctionality();
