@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    width: 100%;
+    height: 100%;
+}
+#nav{
+    width: 100%;
+    height: 100px;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+#menu{
+    display: flex;
+    align-items: center;
+    
+}
+#menu h3{
+    border: 1.5px solid #000;
+    border-radius: 50px;
+    padding: 3px 8px;
+    font-weight: 500;
+    font-size: 16px;
+}
+#menu i{
+    border: 1.5px solid #000;
+    border-radius: 50px;
+    padding: 3px 5px;
+    font-weight: 500;
+    font-size: 16px;
+}
+#login{
+    border-radius: 50px;
+    padding: 3px 8px;
+    border: 1px solid #000;
+}
+#signup{
+    border-radius: 50px;
+    padding: 3px 8px;
+    border: none;
+    background-color: rgb(228, 97, 50);
+}
+#content{
+    font-size: 140px;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+img{
+    height: 400px;
+    width: 320px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+}
+#img1{
+    transform: translate(-50%, -50%) rotate();
+}
+#img2{
+    transform: translate(-50%, -50%) rotate(-10deg);
+}
+#img3{
+    transform: translate(-50%, -50%) rotate(-20deg);
+}
+#img4{
+    transform: translate(-50%, -50%) rotate(-30deg);
+}
+#footer{
+position:absolute;
+bottom: 5%;
+left: 2.5%;
+display: flex;
+justify-content: space-between;
+width: 95%;
+}
+#footer h3{
+    font-weight: 500;
+}
+#footer i{
+    font-size: 22px;
+}
